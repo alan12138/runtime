@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF6FD34D1D23C002006CCEA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6FD34C1D23C002006CCEA3 /* main.m */; };
+		AF6FD3501D23C002006CCEA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6FD34F1D23C002006CCEA3 /* AppDelegate.m */; };
+		AF6FD3531D23C002006CCEA3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6FD3521D23C002006CCEA3 /* ViewController.m */; };
+		AF6FD3561D23C002006CCEA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF6FD3541D23C002006CCEA3 /* Main.storyboard */; };
+		AF6FD3581D23C002006CCEA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF6FD3571D23C002006CCEA3 /* Assets.xcassets */; };
+		AF6FD35B1D23C002006CCEA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF6FD3591D23C002006CCEA3 /* LaunchScreen.storyboard */; };
+		AF6FD3661D23C002006CCEA3 /* ___KVC______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6FD3651D23C002006CCEA3 /* ___KVC______Tests.m */; };
+		AF6FD3711D23C002006CCEA3 /* ___KVC______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6FD3701D23C002006CCEA3 /* ___KVC______UITests.m */; };
+		AF6FD3821D23C02A006CCEA3 /* NSObject+ATProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6FD3811D23C02A006CCEA3 /* NSObject+ATProperty.m */; };
+		AF6FD3851D23C058006CCEA3 /* ATStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6FD3841D23C058006CCEA3 /* ATStatus.m */; };
+		AF6FD3871D23C2E3006CCEA3 /* status.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF6FD3861D23C2E3006CCEA3 /* status.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF6FD3621D23C002006CCEA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF6FD3401D23C002006CCEA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF6FD3471D23C002006CCEA3;
+			remoteInfo = "直接用KVC做字典转模型";
+		};
+		AF6FD36D1D23C002006CCEA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF6FD3401D23C002006CCEA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF6FD3471D23C002006CCEA3;
+			remoteInfo = "直接用KVC做字典转模型";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF6FD3481D23C002006CCEA3 /* 直接用KVC做字典转模型.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "直接用KVC做字典转模型.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF6FD34C1D23C002006CCEA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF6FD34E1D23C002006CCEA3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AF6FD34F1D23C002006CCEA3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AF6FD3511D23C002006CCEA3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AF6FD3521D23C002006CCEA3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AF6FD3551D23C002006CCEA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF6FD3571D23C002006CCEA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF6FD35A1D23C002006CCEA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF6FD35C1D23C002006CCEA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF6FD3611D23C002006CCEA3 /* 直接用KVC做字典转模型Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "直接用KVC做字典转模型Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF6FD3651D23C002006CCEA3 /* ___KVC______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___KVC______Tests.m"; sourceTree = "<group>"; };
+		AF6FD3671D23C002006CCEA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF6FD36C1D23C002006CCEA3 /* 直接用KVC做字典转模型UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "直接用KVC做字典转模型UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF6FD3701D23C002006CCEA3 /* ___KVC______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___KVC______UITests.m"; sourceTree = "<group>"; };
+		AF6FD3721D23C002006CCEA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF6FD3801D23C02A006CCEA3 /* NSObject+ATProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ATProperty.h"; sourceTree = "<group>"; };
+		AF6FD3811D23C02A006CCEA3 /* NSObject+ATProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ATProperty.m"; sourceTree = "<group>"; };
+		AF6FD3831D23C058006CCEA3 /* ATStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATStatus.h; sourceTree = "<group>"; };
+		AF6FD3841D23C058006CCEA3 /* ATStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATStatus.m; sourceTree = "<group>"; };
+		AF6FD3861D23C2E3006CCEA3 /* status.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = status.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF6FD3451D23C002006CCEA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF6FD35E1D23C002006CCEA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF6FD3691D23C002006CCEA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF6FD33F1D23C002006CCEA3 = {
+			isa = PBXGroup;
+			children = (
+				AF6FD34A1D23C002006CCEA3 /* 直接用KVC做字典转模型 */,
+				AF6FD3641D23C002006CCEA3 /* 直接用KVC做字典转模型Tests */,
+				AF6FD36F1D23C002006CCEA3 /* 直接用KVC做字典转模型UITests */,
+				AF6FD3491D23C002006CCEA3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF6FD3491D23C002006CCEA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF6FD3481D23C002006CCEA3 /* 直接用KVC做字典转模型.app */,
+				AF6FD3611D23C002006CCEA3 /* 直接用KVC做字典转模型Tests.xctest */,
+				AF6FD36C1D23C002006CCEA3 /* 直接用KVC做字典转模型UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF6FD34A1D23C002006CCEA3 /* 直接用KVC做字典转模型 */ = {
+			isa = PBXGroup;
+			children = (
+				AF6FD34E1D23C002006CCEA3 /* AppDelegate.h */,
+				AF6FD34F1D23C002006CCEA3 /* AppDelegate.m */,
+				AF6FD3511D23C002006CCEA3 /* ViewController.h */,
+				AF6FD3521D23C002006CCEA3 /* ViewController.m */,
+				AF6FD3541D23C002006CCEA3 /* Main.storyboard */,
+				AF6FD3571D23C002006CCEA3 /* Assets.xcassets */,
+				AF6FD3591D23C002006CCEA3 /* LaunchScreen.storyboard */,
+				AF6FD35C1D23C002006CCEA3 /* Info.plist */,
+				AF6FD34B1D23C002006CCEA3 /* Supporting Files */,
+			);
+			path = "直接用KVC做字典转模型";
+			sourceTree = "<group>";
+		};
+		AF6FD34B1D23C002006CCEA3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF6FD3861D23C2E3006CCEA3 /* status.plist */,
+				AF6FD3831D23C058006CCEA3 /* ATStatus.h */,
+				AF6FD3841D23C058006CCEA3 /* ATStatus.m */,
+				AF6FD3801D23C02A006CCEA3 /* NSObject+ATProperty.h */,
+				AF6FD3811D23C02A006CCEA3 /* NSObject+ATProperty.m */,
+				AF6FD34C1D23C002006CCEA3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF6FD3641D23C002006CCEA3 /* 直接用KVC做字典转模型Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AF6FD3651D23C002006CCEA3 /* ___KVC______Tests.m */,
+				AF6FD3671D23C002006CCEA3 /* Info.plist */,
+			);
+			path = "直接用KVC做字典转模型Tests";
+			sourceTree = "<group>";
+		};
+		AF6FD36F1D23C002006CCEA3 /* 直接用KVC做字典转模型UITests */ = {
+			isa = PBXGroup;
+			children = (
+				AF6FD3701D23C002006CCEA3 /* ___KVC______UITests.m */,
+				AF6FD3721D23C002006CCEA3 /* Info.plist */,
+			);
+			path = "直接用KVC做字典转模型UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF6FD3471D23C002006CCEA3 /* 直接用KVC做字典转模型 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF6FD3751D23C002006CCEA3 /* Build configuration list for PBXNativeTarget "直接用KVC做字典转模型" */;
+			buildPhases = (
+				AF6FD3441D23C002006CCEA3 /* Sources */,
+				AF6FD3451D23C002006CCEA3 /* Frameworks */,
+				AF6FD3461D23C002006CCEA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "直接用KVC做字典转模型";
+			productName = "直接用KVC做字典转模型";
+			productReference = AF6FD3481D23C002006CCEA3 /* 直接用KVC做字典转模型.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF6FD3601D23C002006CCEA3 /* 直接用KVC做字典转模型Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF6FD3781D23C002006CCEA3 /* Build configuration list for PBXNativeTarget "直接用KVC做字典转模型Tests" */;
+			buildPhases = (
+				AF6FD35D1D23C002006CCEA3 /* Sources */,
+				AF6FD35E1D23C002006CCEA3 /* Frameworks */,
+				AF6FD35F1D23C002006CCEA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF6FD3631D23C002006CCEA3 /* PBXTargetDependency */,
+			);
+			name = "直接用KVC做字典转模型Tests";
+			productName = "直接用KVC做字典转模型Tests";
+			productReference = AF6FD3611D23C002006CCEA3 /* 直接用KVC做字典转模型Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AF6FD36B1D23C002006CCEA3 /* 直接用KVC做字典转模型UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF6FD37B1D23C002006CCEA3 /* Build configuration list for PBXNativeTarget "直接用KVC做字典转模型UITests" */;
+			buildPhases = (
+				AF6FD3681D23C002006CCEA3 /* Sources */,
+				AF6FD3691D23C002006CCEA3 /* Frameworks */,
+				AF6FD36A1D23C002006CCEA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF6FD36E1D23C002006CCEA3 /* PBXTargetDependency */,
+			);
+			name = "直接用KVC做字典转模型UITests";
+			productName = "直接用KVC做字典转模型UITests";
+			productReference = AF6FD36C1D23C002006CCEA3 /* 直接用KVC做字典转模型UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF6FD3401D23C002006CCEA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AT;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = at;
+				TargetAttributes = {
+					AF6FD3471D23C002006CCEA3 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					AF6FD3601D23C002006CCEA3 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = AF6FD3471D23C002006CCEA3;
+					};
+					AF6FD36B1D23C002006CCEA3 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = AF6FD3471D23C002006CCEA3;
+					};
+				};
+			};
+			buildConfigurationList = AF6FD3431D23C002006CCEA3 /* Build configuration list for PBXProject "直接用KVC做字典转模型" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF6FD33F1D23C002006CCEA3;
+			productRefGroup = AF6FD3491D23C002006CCEA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF6FD3471D23C002006CCEA3 /* 直接用KVC做字典转模型 */,
+				AF6FD3601D23C002006CCEA3 /* 直接用KVC做字典转模型Tests */,
+				AF6FD36B1D23C002006CCEA3 /* 直接用KVC做字典转模型UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF6FD3461D23C002006CCEA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF6FD35B1D23C002006CCEA3 /* LaunchScreen.storyboard in Resources */,
+				AF6FD3581D23C002006CCEA3 /* Assets.xcassets in Resources */,
+				AF6FD3561D23C002006CCEA3 /* Main.storyboard in Resources */,
+				AF6FD3871D23C2E3006CCEA3 /* status.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF6FD35F1D23C002006CCEA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF6FD36A1D23C002006CCEA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF6FD3441D23C002006CCEA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF6FD3531D23C002006CCEA3 /* ViewController.m in Sources */,
+				AF6FD3821D23C02A006CCEA3 /* NSObject+ATProperty.m in Sources */,
+				AF6FD3851D23C058006CCEA3 /* ATStatus.m in Sources */,
+				AF6FD3501D23C002006CCEA3 /* AppDelegate.m in Sources */,
+				AF6FD34D1D23C002006CCEA3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF6FD35D1D23C002006CCEA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF6FD3661D23C002006CCEA3 /* ___KVC______Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF6FD3681D23C002006CCEA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF6FD3711D23C002006CCEA3 /* ___KVC______UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF6FD3631D23C002006CCEA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF6FD3471D23C002006CCEA3 /* 直接用KVC做字典转模型 */;
+			targetProxy = AF6FD3621D23C002006CCEA3 /* PBXContainerItemProxy */;
+		};
+		AF6FD36E1D23C002006CCEA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF6FD3471D23C002006CCEA3 /* 直接用KVC做字典转模型 */;
+			targetProxy = AF6FD36D1D23C002006CCEA3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF6FD3541D23C002006CCEA3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF6FD3551D23C002006CCEA3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF6FD3591D23C002006CCEA3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF6FD35A1D23C002006CCEA3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF6FD3731D23C002006CCEA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AF6FD3741D23C002006CCEA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF6FD3761D23C002006CCEA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "直接用KVC做字典转模型/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.at.---KVC------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AF6FD3771D23C002006CCEA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "直接用KVC做字典转模型/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.at.---KVC------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AF6FD3791D23C002006CCEA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "直接用KVC做字典转模型Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.at.---KVC------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/直接用KVC做字典转模型.app/直接用KVC做字典转模型";
+			};
+			name = Debug;
+		};
+		AF6FD37A1D23C002006CCEA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "直接用KVC做字典转模型Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.at.---KVC------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/直接用KVC做字典转模型.app/直接用KVC做字典转模型";
+			};
+			name = Release;
+		};
+		AF6FD37C1D23C002006CCEA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "直接用KVC做字典转模型UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.at.---KVC------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "直接用KVC做字典转模型";
+			};
+			name = Debug;
+		};
+		AF6FD37D1D23C002006CCEA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "直接用KVC做字典转模型UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.at.---KVC------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "直接用KVC做字典转模型";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF6FD3431D23C002006CCEA3 /* Build configuration list for PBXProject "直接用KVC做字典转模型" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF6FD3731D23C002006CCEA3 /* Debug */,
+				AF6FD3741D23C002006CCEA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF6FD3751D23C002006CCEA3 /* Build configuration list for PBXNativeTarget "直接用KVC做字典转模型" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF6FD3761D23C002006CCEA3 /* Debug */,
+				AF6FD3771D23C002006CCEA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AF6FD3781D23C002006CCEA3 /* Build configuration list for PBXNativeTarget "直接用KVC做字典转模型Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF6FD3791D23C002006CCEA3 /* Debug */,
+				AF6FD37A1D23C002006CCEA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AF6FD37B1D23C002006CCEA3 /* Build configuration list for PBXNativeTarget "直接用KVC做字典转模型UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF6FD37C1D23C002006CCEA3 /* Debug */,
+				AF6FD37D1D23C002006CCEA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF6FD3401D23C002006CCEA3 /* Project object */;
+}
