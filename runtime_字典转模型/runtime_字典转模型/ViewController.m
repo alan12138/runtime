@@ -22,7 +22,8 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"status.plist" ofType:nil];
     NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
     NSArray *array = dict[@"statuses"];
-    //    [NSObject createPropertyCodeWithDict:array[0]];
+//        [NSObject createPropertyCodeWithDict:array[0][@"pic_urls"][0]];
+    
     
     NSMutableArray *statuses = [NSMutableArray array];
     for (NSDictionary *dict in array) {
@@ -31,8 +32,8 @@
         [statuses addObject:status];
     }
     NSLog(@"%@",statuses);
-    ATStatus *status = statuses[0];
-    NSLog(@"%@", status.source);
+//    ATStatus *status = statuses[0];
+//    NSLog(@"%@", status.source);
 }
 
 - (void)didReceiveMemoryWarning {

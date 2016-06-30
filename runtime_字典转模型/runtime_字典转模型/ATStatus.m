@@ -9,5 +9,7 @@
 #import "ATStatus.h"
 
 @implementation ATStatus
-
++ (NSDictionary *)ModelClassInArray {
+    return @{@"pic_urls" : @"ATPicture"};
+}
 @end

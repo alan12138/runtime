@@ -19,6 +19,8 @@
 		AF43B75E1D24B150002F32A3 /* ATStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = AF43B75D1D24B150002F32A3 /* ATStatus.m */; };
 		AF43B7611D24B57E002F32A3 /* NSObject+ATObjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF43B7601D24B57E002F32A3 /* NSObject+ATObjectModel.m */; };
 		AF43B7631D24B790002F32A3 /* status.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF43B7621D24B790002F32A3 /* status.plist */; };
+		AF43B7661D24E9F7002F32A3 /* ATUser.m in Sources */ = {isa = PBXBuildFile; fileRef = AF43B7651D24E9F7002F32A3 /* ATUser.m */; };
+		AF43B7691D24EA14002F32A3 /* ATPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = AF43B7681D24EA14002F32A3 /* ATPicture.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,10 @@
 		AF43B75F1D24B57E002F32A3 /* NSObject+ATObjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ATObjectModel.h"; sourceTree = "<group>"; };
 		AF43B7601D24B57E002F32A3 /* NSObject+ATObjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ATObjectModel.m"; sourceTree = "<group>"; };
 		AF43B7621D24B790002F32A3 /* status.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = status.plist; sourceTree = "<group>"; };
+		AF43B7641D24E9F7002F32A3 /* ATUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATUser.h; sourceTree = "<group>"; };
+		AF43B7651D24E9F7002F32A3 /* ATUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATUser.m; sourceTree = "<group>"; };
+		AF43B7671D24EA14002F32A3 /* ATPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATPicture.h; sourceTree = "<group>"; };
+		AF43B7681D24EA14002F32A3 /* ATPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATPicture.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,10 @@
 				AF43B72B1D24B061002F32A3 /* ViewController.m */,
 				AF43B75C1D24B150002F32A3 /* ATStatus.h */,
 				AF43B75D1D24B150002F32A3 /* ATStatus.m */,
+				AF43B7641D24E9F7002F32A3 /* ATUser.h */,
+				AF43B7651D24E9F7002F32A3 /* ATUser.m */,
+				AF43B7671D24EA14002F32A3 /* ATPicture.h */,
+				AF43B7681D24EA14002F32A3 /* ATPicture.m */,
 				AF43B72D1D24B061002F32A3 /* Main.storyboard */,
 				AF43B7301D24B061002F32A3 /* Assets.xcassets */,
 				AF43B7321D24B061002F32A3 /* LaunchScreen.storyboard */,
@@ -293,8 +303,10 @@
 				AF43B72C1D24B061002F32A3 /* ViewController.m in Sources */,
 				AF43B75B1D24B12D002F32A3 /* NSObject+ATProperty.m in Sources */,
 				AF43B75E1D24B150002F32A3 /* ATStatus.m in Sources */,
+				AF43B7691D24EA14002F32A3 /* ATPicture.m in Sources */,
 				AF43B7291D24B061002F32A3 /* AppDelegate.m in Sources */,
 				AF43B7261D24B061002F32A3 /* main.m in Sources */,
+				AF43B7661D24E9F7002F32A3 /* ATUser.m in Sources */,
 				AF43B7611D24B57E002F32A3 /* NSObject+ATObjectModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

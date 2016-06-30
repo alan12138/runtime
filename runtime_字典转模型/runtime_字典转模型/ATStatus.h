@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSObject+ATObjectModel.h"
 
-@interface ATStatus : NSObject
+@class ATUser;
+@interface ATStatus : NSObject<ObjectModelDelegate>
 
 @property (nonatomic, assign) NSInteger ID;
 
@@ -28,6 +30,7 @@
 
 @property (nonatomic, assign) NSUInteger comments_count;
 
-@property (nonatomic, copy) NSDictionary *user;
+//注意改类型的时候看看策略是否对应
+@property (nonatomic, strong) ATUser *user;
 
 @end

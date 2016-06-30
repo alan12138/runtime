@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol ObjectModelDelegate <NSObject>
+
++ (NSDictionary *)ModelClassInArray;
+
+@end
+
 @interface NSObject (ATObjectModel)
 + (__kindof NSObject *)objectModelWithDict:(NSDictionary *)dict;
 @end

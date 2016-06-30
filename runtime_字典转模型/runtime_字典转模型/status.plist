@@ -18,6 +18,8 @@
 			<key>pic_urls</key>
 			<array>
 				<dict>
+					<key>id</key>
+					<integer>333</integer>
 					<key>thumbnail_pic</key>
 					<string>http://ww4.sinaimg.cn/thumbnail/80292f4btw1eqi01myf23j20br08ogm0.jpg</string>
 				</dict>
@@ -30,6 +32,8 @@
 			<string>媳妇手机没电了就放桌上了，我给充好放窗台了，2货媳妇发现手机电满的，很兴奋的跟我说她手机可以太阳能充电…#猪猪爱讲冷笑话#</string>
 			<key>user</key>
 			<dict>
+				<key>id</key>
+				<integer>222</integer>
 				<key>mbrank</key>
 				<integer>4</integer>
 				<key>mbtype</key>

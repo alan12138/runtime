@@ -25,20 +25,62 @@
         //获取成员属性名
         NSString *propertyName = [NSString stringWithUTF8String:ivar_getName(ivar)];
         //去掉proprtyName前面的下划线
-        NSString *property = [propertyName substringFromIndex:1];
-        //获取成员属性类型
-        //        NSString *propertyType = [NSString stringWithUTF8String:ivar_getTypeEncoding(ivar)];
+        propertyName = [propertyName substringFromIndex:1];
+        
         //获取value
         id value = nil;
-        if ([property isEqualToString:@"ID"]) {
+        if ([propertyName isEqualToString:@"ID"]) {
             value = dict[@"id"];
         } else {
-            value = dict[property];
+            value = dict[propertyName];
         }
+        
+        //二级转换
+        //获取成员属性类型
+        NSString *propertyType = [NSString stringWithUTF8String:ivar_getTypeEncoding(ivar)];
+        //如果value是字典(实质是字典类型，但是不是NSDictionary，因为如果类型还是NSDictionary没有必要转换)
+        if ([value isKindOfClass:[NSDictionary class]] && ![propertyType containsString:@"NS"]) {
+            //            NSLog(@"%@", propertyType);
+            //获取属性类型(剪切字符串@"@\"ATUser\"")
+            NSString *type = [NSString stringWithUTF8String:ivar_getTypeEncoding(ivar)];
+            NSRange range = [type rangeOfString:@"\""];
+            type = [type substringFromIndex:range.location + range.length];
+            range = [type rangeOfString:@"\""];
+            type = [type substringToIndex:range.location];
+            
+            Class modelClass = NSClassFromString(type);
+            if (modelClass) { //有对应的类型才需要转
+                value = [modelClass objectModelWithDict:value];
+            }
+        }
+        
+        //三级转换（如果value是数组，数组中再包含字典）
+        if ([value isKindOfClass:[NSArray class]]) {
+            //如果模型类实现了字典数组转模型数组的协议
+            if ([self respondsToSelector:@selector(ModelClassInArray)]) {
+                //转换成id类型，就能调用任何对象的方法
+                id idSelf = self;
+                //获取数组中的模型
+                NSString *type = [idSelf ModelClassInArray][propertyName];
+                Class modelClass = NSClassFromString(type);
+                
+                NSMutableArray *dictArr = [NSMutableArray array];
+                //遍历数组
+                for (NSDictionary *dict in value) {
+                    //转模型
+                    id model = [modelClass objectModelWithDict:dict];
+                    [dictArr addObject:model];
+                }
+                //把模型数组赋值给value
+                value = dictArr;
+            }
+        }
+        
+        
         
         if (value) {
             //KVC赋值，不能传空
-            [obj setValue:value forKey:property];
+            [obj setValue:value forKey:propertyName];
         }
         
     }
