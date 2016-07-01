@@ -84,6 +84,8 @@
         }
         
     }
+    //C语言函数，ARC不会自动释放，需要手动释放
+    free(ivarList);
     return obj;
 }
 @end
